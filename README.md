@@ -1,7 +1,7 @@
 # Life-Expectancy-Prediction
 ## 1. DETAILS
 ### Team Details:
-    Team consist of three people, and they are Sathvik N G (sathvikng56@gmail.com), Sanketh L Reddy (xxxx@gmail.com) 
+    Team consist of three people, and they are Sathvik N G (sathvikng56@gmail.com), Sanketh L Reddy (sankethl2003@gmail.com), Thomas Sunil (thomas.sk2504@gmail.com) 
 ### Project Name:
     Life Expectancy Prediction
 ## 2. DEFINING PROJECT AND ITS SCOPE
