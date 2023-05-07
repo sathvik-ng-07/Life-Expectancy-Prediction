@@ -1,6 +1,6 @@
 # Life-Expectancy-Prediction
-1. DETAILS
-Team Details: Team consist of three people, and they are Sathvik N G (sathvikng56@gmail.com), Sanketh L Reddy (xxxx@gmail.com) 
+## 1. DETAILS
+### Team Details: Team consist of three people, and they are Sathvik N G (sathvikng56@gmail.com), Sanketh L Reddy (xxxx@gmail.com) 
 Project Name: Life Expectancy Prediction
 2. DEFINING PROJECT AND ITS SCOPE
 Understanding of the project: The goal of this project is to predict the life expectancy of a person based on various factors. The factors include the year in which the data was recorded, the status of the country, the mortality rate of adults, the number of infant deaths, alcohol consumption, expenditure percentage, hepatitis B vaccination coverage, measles cases, body mass index (BMI), polio vaccination coverage, total expenditure, diphtheria vaccination coverage, HIV/AIDS prevalence, gross domestic product (GDP), population, thinness rates in children aged 1-19 years and 5-9 years, income composition of resources, and schooling.
