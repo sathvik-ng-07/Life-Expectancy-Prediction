@@ -1,10 +1,5 @@
 # Life-Expectancy-Prediction
-## 1. DETAILS
-### Team Details:
-    Team consist of three people, and they are Sathvik N G (sathvikng56@gmail.com), Sanketh L Reddy (sankethl2003@gmail.com), Thomas Sunil (thomas.sk2504@gmail.com) 
-### Project Name:
-    Life Expectancy Prediction
-## 2. DEFINING PROJECT AND ITS SCOPE
+##  DEFINING PROJECT AND ITS SCOPE
 ### Understanding of the project:
 The goal of this project is to predict the life expectancy of a person based on various factors. The factors include the year in which the data was recorded, the status of the country, the mortality rate of adults, the number of infant deaths, alcohol consumption, expenditure percentage, hepatitis B vaccination coverage, measles cases, body mass index (BMI), polio vaccination coverage, total expenditure, diphtheria vaccination coverage, HIV/AIDS prevalence, gross domestic product (GDP), population, thinness rates in children aged 1-19 years and 5-9 years, income composition of resources, and schooling.
 To achieve this goal, we will create a basic linear regression model to find the linear relationship between life expectancy and the various factors mentioned above. We will also perform exploratory data analysis (EDA) to understand the data and discover patterns, relationships, and anomalies. EDA will involve checking the quality of the data, computing descriptive statistics of the dataset, visualizing the distribution of each variable, analysing relationships between variables and the target variable, exploring categorical variables, identifying missing values, detecting outliers, performing feature engineering, data normalization, and feature selection.
@@ -17,7 +12,7 @@ We chose this problem for the reason of its social significance and potential im
 The most challenging aspect of this project is to identify the relevant variables that have a significant impact on life expectancy and to develop an accurate predictive model. It requires a deep understanding of the underlying concepts and a thorough analysis of the dataset. Another challenge is to deal with missing data and outliers in the dataset, which can affect the performance of the model. Furthermore, selecting the appropriate machine learning algorithm, optimizing its hyperparameters, and evaluating the model's performance is a complex task that requires expertise and experience. Lastly, ensuring that the model is robust and scalable and can be deployed in a real-world scenario is another significant challenge. Overall, this project requires a strong foundation in statistics, data analysis, and machine learning, and it demands a rigorous and systematic approach to problem-solving.
 
 
-## 3. APPROACH OF PROBLEM CHOSEN
+##  APPROACH OF PROBLEM CHOSEN
 ### Approach:
 #### Below is the approach that we are going to follow.
 1.	We will collect data on various factors that can affect life expectancy such as age, gender, lifestyle, health conditions, environmental factors, etc. We will use publicly available datasets from reliable sources like WHO, CDC, etc.
