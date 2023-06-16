@@ -24,3 +24,6 @@ The most challenging aspect of this project is to identify the relevant variable
 7.	We will evaluate the performance of the trained model using metrics like mean squared error, R-squared score, etc. We will use test data to evaluate the model and ensure that it generalizes well.
 8.	Once we have a trained and evaluated model, we will deploy it in a production environment. We can create a web-based interface where users can input their details and get their predicted life expectancy. We will use cloud-based services like AWS, Google Cloud, etc. to deploy the model.
 Throughout the project, we will be using Python and various libraries like NumPy, Pandas, Matplotlib, Scikit-learn, etc. to implement the machine learning algorithms and perform data analysis. We will also be using Jupyter Notebook to document our progress and share our work with the team.
+
+## Project Deployment :
+https://life-expectancy-prediction-008.onrender.com
