@@ -80,6 +80,21 @@
         font-size: 12px;
         color: #666;
       }
+
+      /* Styling the error messages */
+      .error {
+        color: red;
+        font-size: 12px;
+        margin-top: 5px;
+      }
+
+      .error-section {
+        background-color: #f8d7da;
+        color: red;
+        padding: 10px;
+        margin-top: 20px;
+        border: 1px solid red;
+      }
     </style>
   </head>
   <body>
@@ -88,7 +103,7 @@
       <!-- Main Input For Receiving Query to our ML -->
       <form action="/predict" method="POST">
         <p style="text-align: left">
-          <small><b>Year</b></small>
+          <small><b>Year [ Between 1980 to 2005 ]</b></small>
         </p>
         <input
           type="number"
@@ -97,7 +112,7 @@
           required="required"
         />
         <p style="text-align: left">
-          <small><b>Status</b></small>
+          <small><b>Status [ Either 0 or 1 ]</b></small>
         </p>
         <input
           type="number"
@@ -106,7 +121,7 @@
           required="required"
         />
         <p style="text-align: left">
-          <small><b>Adult Mortality</b></small>
+          <small><b>Adult Mortality [ Between 0 to 2000 ]</b></small>
         </p>
         <input
           type="number"
@@ -115,7 +130,7 @@
           required="required"
         />
         <p style="text-align: left">
-          <small><b>Alcohol</b></small>
+          <small><b>Alcohol [ Between 0 to 20 ]</b></small>
         </p>
         <input
           type="number"
@@ -125,7 +140,7 @@
           required="required"
         />
         <p style="text-align: left">
-          <small><b>Hepatitis B</b></small>
+          <small><b>Hepatitis B [ Between 0 to 100 ]</b></small>
         </p>
         <input
           type="number"
@@ -134,7 +149,7 @@
           required="required"
         />
         <p style="text-align: left">
-          <small><b>Measles</b></small>
+          <small><b>Measles [ Between 0 to 100000 ]</b></small>
         </p>
         <input
           type="number"
@@ -143,7 +158,7 @@
           required="required"
         />
         <p style="text-align: left">
-          <small><b>BMI</b></small>
+          <small><b>BMI [ Between 0 to 100 ]</b></small>
         </p>
         <input
           type="number"
@@ -153,7 +168,7 @@
           required="required"
         />
         <p style="text-align: left">
-          <small><b>Under-Five Deaths</b></small>
+          <small><b>Under-Five Deaths [ Between 0 to 1000 ]</b></small>
         </p>
         <input
           type="number"
@@ -162,7 +177,7 @@
           required="required"
         />
         <p style="text-align: left">
-          <small><b>Polio</b></small>
+          <small><b>Polio [ Between 0 to 100 ]</b></small>
         </p>
         <input
           type="number"
@@ -171,7 +186,7 @@
           required="required"
         />
         <p style="text-align: left">
-          <small><b>Total Expenditure</b></small>
+          <small><b>Total Expenditure [ Between 0 to 20 ]</b></small>
         </p>
         <input
           type="number"
@@ -181,7 +196,7 @@
           required="required"
         />
         <p style="text-align: left">
-          <small><b>Diphtheria</b></small>
+          <small><b>Diphtheria [ Between 0 to 100 ]</b></small>
         </p>
         <input
           type="number"
@@ -190,7 +205,7 @@
           required="required"
         />
         <p style="text-align: left">
-          <small><b>HIV/AIDS</b></small>
+          <small><b>HIV/AIDS [ Between 0 to 50 ]</b></small>
         </p>
         <input
           type="number"
@@ -200,7 +215,7 @@
           required="required"
         />
         <p style="text-align: left">
-          <small><b>GDP</b></small>
+          <small><b>GDP [ Between 0 to 50000 ]</b></small>
         </p>
         <input
           type="number"
@@ -210,7 +225,7 @@
           required="required"
         />
         <p style="text-align: left">
-          <small><b>Population</b></small>
+          <small><b>Population [ Between 0 to 1,00,00,00,000 ]</b></small>
         </p>
         <input
           type="number"
@@ -219,7 +234,7 @@
           required="required"
         />
         <p style="text-align: left">
-          <small><b>Thinness 1-19 Years</b></small>
+          <small><b>Thinness 1-19 Years [ Between 0 to 50 ]</b></small>
         </p>
         <input
           type="number"
@@ -229,7 +244,9 @@
           required="required"
         />
         <p style="text-align: left">
-          <small><b>Income Composition of Resources</b></small>
+          <small
+            ><b>Income Composition of Resources [ Between 0 to 1 ]</b></small
+          >
         </p>
         <input
           type="number"
@@ -239,7 +256,7 @@
           required="required"
         />
         <p style="text-align: left">
-          <small><b>Schooling</b></small>
+          <small><b>Schooling [ Between 0 to 20 ]</b></small>
         </p>
         <input
           type="number"
@@ -249,6 +266,17 @@
           required="required"
         />
 
+        {% if errors %}
+        <div class="error-section">
+          <h2>Error:</h2>
+          <ul>
+            {% for error in errors %}
+            <li>{{ error }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+
         <button type="submit" class="btn btn-primary btn-block btn-large">
           Predict
         </button>
@@ -256,3 +284,7 @@
     </div>
   </body>
 </html>
+
+<!-- In this modified version, I added a section to display error messages if any. If there are any errors in the input values, they will be displayed in a div with the class "error" and each error message will be shown as a separate paragraph.
+
+Remember to update your Flask route code to render this modified index.html template with the appropriate error messages. -->
